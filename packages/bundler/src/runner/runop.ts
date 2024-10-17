@@ -16,7 +16,7 @@ import { runBundler } from '../runBundler'
 import { BundlerServer } from '../BundlerServer'
 import { getNetworkProvider } from '../Config'
 
-const ENTRY_POINT = '0x0000000071727De22E5E9d8BAf0edAc6f37da032'
+const ENTRY_POINT = '0xb4D56ACBB9D0111ca6F6C52190ce7460a2AA651d'
 
 class Runner {
   bundlerProvider!: HttpRpcClient
@@ -119,7 +119,7 @@ async function main (): Promise<void> {
     const signer = provider.getSigner()
 
     const signerBalance = await provider.getBalance(signer.getAddress())
-    const account = '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266'
+    const account = '0xADE8c8B0FD4F01E3deceEbB3F1a80F79A7C27149'
     const bal = await provider.getBalance(account)
     if (bal.lt(parseEther('1')) && signerBalance.gte(parseEther('10000'))) {
       console.log('funding hardhat account', account)
@@ -175,7 +175,7 @@ async function main (): Promise<void> {
   console.log('account address', addr, 'deployed=', await isDeployed(addr), 'bal=', formatEther(bal))
   const gasPrice = await provider.getGasPrice()
   // TODO: actual required val
-  const requiredBalance = gasPrice.mul(4e6)
+  const requiredBalance = gasPrice.mul(4e9)
   if (bal.lt(requiredBalance.div(2))) {
     console.log('funding account to', requiredBalance.toString())
     await signer.sendTransaction({

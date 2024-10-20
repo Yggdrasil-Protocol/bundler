@@ -17,6 +17,7 @@ tsconfig.tsbuildinfo
 /.idea/inspectionProfiles/Project_Default.xml
 /packages/bundler/typechain-types/
 /packages/bundler/deployments/
+/packages/bundler/localconfig/mnemonic.txt
 **/dist/
 /packages/bundler/src/types/
 yarn-error.log

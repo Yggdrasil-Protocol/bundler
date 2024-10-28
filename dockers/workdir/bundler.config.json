@@ -1,10 +1,20 @@
 {
-  "mnemonic": "mnemonicfile.txt",
-  "network": "https://goerli.infura.io/v3/f40be2b1a3914db682491dc62a19ad43",
-  "beneficiary": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
-  "port": "80",
-  "helper": "0x214fadBD244c07ECb9DCe782270d3b673cAD0f9c",
-  "entryPoint": "0x602aB3881Ff3Fa8dA60a8F44Cf633e91bA1FdB69",
-  "minBalance": "0",
-  "gasFactor": "1"
+  "gasFactor": "1",
+  "port": "3000",
+  "privateApiPort": "3001",
+  "network": "https://pacific-rpc.sepolia-testnet.manta.network/http",
+  "entryPoint": "0xb4D56ACBB9D0111ca6F6C52190ce7460a2AA651d",
+  "beneficiary": "0xADE8c8B0FD4F01E3deceEbB3F1a80F79A7C27149",
+  "minBalance": "0.02",
+  "mnemonic": "./workdir/mnemonic.txt",
+  "maxBundleGas": 5e6,
+  "minStake": "0.002" ,
+  "minUnstakeDelay": 0 ,
+  "autoBundleInterval": 3,
+  "autoBundleMempoolSize": 10,
+  "rip7560": false,
+  "rip7560Mode": "PULL",
+  "gethDevMode": true
 }
+
+

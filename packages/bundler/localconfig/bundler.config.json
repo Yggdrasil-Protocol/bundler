@@ -1,7 +1,6 @@
 {
   "gasFactor": "1",
   "port": "3000",
-  "privateApiPort": "3001",
   "network": "https://pacific-rpc.sepolia-testnet.manta.network/http",
   "entryPoint": "0xb4D56ACBB9D0111ca6F6C52190ce7460a2AA651d",
   "beneficiary": "0xADE8c8B0FD4F01E3deceEbB3F1a80F79A7C27149",
